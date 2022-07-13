@@ -50,5 +50,5 @@ git commit -m 'delete  dir'
 git push -u origin master
 
 13. 删除远程仓库命令：
-
+如果远程仓库信息有误，则删除本地仓库配置，并且设置相关地址
 git remote rm 远程仓库名称
