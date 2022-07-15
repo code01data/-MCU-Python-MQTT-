@@ -52,3 +52,26 @@ git push -u origin master
 13. 删除远程仓库命令：
 如果远程仓库信息有误，则删除本地仓库配置，并且设置相关地址
 git remote rm 远程仓库名称
+
+
+
+
+### 后续添加文件到git
+
+
+1. 获取远程库与本地同步合并:
+
+git pull --rebase origin master
+
+
+2. 添加到暂存区里面去，如果后面接小数点“.”，意为添加文件夹下的所有文件：
+
+git add .
+
+3. 把文件提交到仓库。引号内为提交说明：
+
+git commit -m  '相关说明'
+
+4. 将最新的修改推送到远程仓库：
+
+git push -u origin master
