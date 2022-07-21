@@ -59,19 +59,22 @@ git remote rm 远程仓库名称
 ### 后续添加文件到git
 
 
-1. 获取远程库与本地同步合并:
-
-git pull --rebase origin master
 
 
-2. 添加到暂存区里面去，如果后面接小数点“.”，意为添加文件夹下的所有文件：
+
+1. 添加到暂存区里面去，如果后面接小数点“.”，意为添加文件夹下的所有文件：
 
 git add .
 
-3. 把文件提交到仓库。引号内为提交说明：
+2. 把文件提交到仓库。引号内为提交说明：
 
 git commit -m  '相关说明'
+
+3. 获取远程库与本地同步合并:
+
+git pull --rebase origin master
 
 4. 将最新的修改推送到远程仓库：
 
 git push -u origin master
+
