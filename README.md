@@ -15,6 +15,10 @@
 4. 腾讯云
 5. 中移OneNet
 ## matlab学习笔记
+### matlab数学建模
+1. MATLAB在数学建模中的应用（第二版）
+2. MATLAB智能算法30个案例分析
+3. MATLAB语言常用算法程序集
 ## MQTT EMQX
 1. win10搭建EMQX,实现MQTT连接
 ## RTOS(实时操作系统)  OneOS 
