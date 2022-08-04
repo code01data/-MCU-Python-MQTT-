@@ -1,5 +1,5 @@
 # Note
-## 嵌入式笔记Embedded
+## 嵌入式笔记EmbeddedNote
 ## ESP32 
 1. ESP32 ESP-IDF环境搭建
 ## ESP8266
@@ -19,6 +19,7 @@
 1. MATLAB在数学建模中的应用（第二版）
 2. MATLAB智能算法30个案例分析
 3. MATLAB语言常用算法程序集
+4 .混沌电路导论学习笔记
 ## MQTT EMQX
 1. win10搭建EMQX,实现MQTT连接
 ## RTOS(实时操作系统)  OneOS 
@@ -63,7 +64,6 @@
 6. 基于普中51单片机按键-数码管显示.md
 7. Blinker语音控制51单片机点灯.md
 ## STM32系列单片机
-### 粤嵌STM32笔记
 1. 野火F1开发板STM32案例0.96 oled综合库使用.md
 2. 野火F1开发板STM32案例-外部中断（按键）使用.md
 3. 野火F1开发板STM32案例-MultiButton移植.md
@@ -85,3 +85,4 @@
 19. STM32F1案例串口USART库使用.md
 20. STM32F1案例基本定时器（TIM6_7）与通用定时器（TIM2_3_4_5）使用.md
 21. STM32F1案例ST7735 TFT液晶显示屏综合库使用.md
+22. 粤嵌STM32开发笔记
