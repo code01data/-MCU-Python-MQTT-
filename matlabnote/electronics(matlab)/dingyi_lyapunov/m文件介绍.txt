@@ -1,0 +1,9 @@
+dingyi_ly.m              定义法求解lyapunov指数测试函数，以lorenz为对象
+
+dingyi_lya.m             定义法求解
+lyapunov指数的m函数
+
+fix_r_lya.m              固定一个参数r的lyapunov指数，求出结果为一个值
+
+jacobian_jie.m           系统的雅可比矩阵解，被
+dingyi_lya.m调用，不同系统下需要改变

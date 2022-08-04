@@ -1,0 +1,3 @@
+lorenz_sim.mdl              lorenz系统模型
+
+poincare_draw.m             lorenz系统的彭卡莱截面

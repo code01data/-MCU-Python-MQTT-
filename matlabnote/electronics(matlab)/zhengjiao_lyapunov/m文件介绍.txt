@@ -1,0 +1,9 @@
+lorenz.m                 m文件写的lorenz系统，带有雅可比矩阵，专用于正交法
+
+lya_lorenz.m             正交法求解lyapunov指数测试函数，lorenz系统
+
+fix_r_lyapunov.m          固定一个参数r的lyapunov指数，求出结果为一个值
+
+lyapunov.m                正交法求解lyapunov指数函数
+
+reconstruction.m          相空间重构函数
