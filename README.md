@@ -1,5 +1,5 @@
 # Note
-## 嵌入式笔记EmbeddedNote
+1. 嵌入式笔记EmbeddedNote
 ## ESP32 
 1. ESP32 ESP-IDF环境搭建
 ## ESP8266
