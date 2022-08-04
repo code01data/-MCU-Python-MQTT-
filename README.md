@@ -1,6 +1,6 @@
 # Note
 ## 嵌入式笔记EmbeddedNote
- 1. c基础知识
+ 1. C基础知识
  1. 数据结构（链表 hash表 排序算法 设计模式等）
  2. 外设（串口 网口 i2s i2c spi sdio等）
  3. ARM cortex-m0 m3 m4 A8等芯片架构
