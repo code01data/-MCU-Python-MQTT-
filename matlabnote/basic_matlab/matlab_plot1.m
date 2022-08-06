@@ -98,6 +98,7 @@ title('Plot of the Sine Function','FontSize',12)
 
 yyaxis_x = linspace(0,10);
 yyaxis_y = sin(3*yyaxis_x);
+figure
 yyaxis left  %◊Û≤‡ y ÷·
 plot(yyaxis_x,yyaxis_y,'r')
 
@@ -105,4 +106,3 @@ yyaxis_z = sin(3*yyaxis_x).*exp(0.5*yyaxis_x);
 yyaxis right %”“≤‡ y ÷·
 plot(yyaxis_x,yyaxis_z,'b')
 ylim([-150 150]) %%y÷·µƒ∑∂Œß¥Û–°
-
