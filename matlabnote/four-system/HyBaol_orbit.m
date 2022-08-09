@@ -13,7 +13,7 @@ set(get(gca, 'YLabel'), 'String', 'y');
 set(get(gca, 'ZLabel'), 'String', 'z');
 title('z-y-x空间');
 subplot(2,2,2)
-plot(y(20000:end,1),y(20000:end,3));
+plot(y(20000:end,1),y(20000:end,3));%(a,b,1)1表示x 2表示y 3表示z
 set(get(gca, 'XLabel'), 'String', 'x');
 set(get(gca, 'YLabel'), 'String', 'z');
 title('x-z平面');

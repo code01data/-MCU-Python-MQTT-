@@ -1,6 +1,6 @@
 function dy=HyBaol(t,y)
     dy=zeros (4,1); 
-    a=20;b=4; c=32; d=4; %System parameters
+    a=20;b=4; c=32; d=36; %System parameters
     %a=20;b=1.4; c=32; %System parameters
     %a=20;b=8; c=32; %System parameters
     %a=20;b=8.9; c=32; %System parameters
