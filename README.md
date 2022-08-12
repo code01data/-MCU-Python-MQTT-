@@ -126,3 +126,9 @@
 20. STM32F1案例基本定时器（TIM6_7）与通用定时器（TIM2_3_4_5）使用.md
 21. STM32F1案例ST7735 TFT液晶显示屏综合库使用.md
 22. 粤嵌STM32开发笔记
+
+## RTOS
+1. 【安富菜】FreeRTOS开发实战指南.pdf
+2. 【百问】FreeRTOS开发实战指南.pdf
+3. 【百问】RT-Thread开发实战指南.pdf
+4. 【野火】RT-Thread 开发实战指南.pdf
