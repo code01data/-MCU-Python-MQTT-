@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.7.11)  12 JUL 2022 07:37
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.7.11)  16 AUG 2022 08:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1847,16 +1847,16 @@ Package rerunfilecheck Warning: File `example.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `example.out':
-(rerunfilecheck)             Before: 04DA32CF75232B362F7E13847747A17E;1864
+(rerunfilecheck)             Before: 7DC1BE6E0EBEE6CFA4C8242591818B65;2154
 (rerunfilecheck)             After:  F233F0CE635A32AE10423A9275A01DB6;2133.
  )
 (\end occurred when \iftrue on line 54 was incomplete) 
 Here is how much of TeX's memory you used:
- 32765 strings out of 476919
- 666972 string characters out of 5820048
- 1436048 words of memory out of 5000000
- 52031 multiletter control sequences out of 15000+600000
- 412001 words of font info for 143 fonts, out of 8000000 for 9000
+ 32769 strings out of 476919
+ 667085 string characters out of 5820048
+ 1436043 words of memory out of 5000000
+ 52034 multiletter control sequences out of 15000+600000
+ 412009 words of font info for 144 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  115i,14n,137p,449b,1362s stack positions out of 5000i,500n,10000p,200000b,80000s
 
