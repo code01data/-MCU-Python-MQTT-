@@ -14,23 +14,23 @@ function [x,k] = SOR(A,b,x0,w,tol)
         return;
     end
 
-D = diag(diag(A));%求A的对角矩阵
-L = tril(A,-1);%求A的下三角矩阵
-U = triu(A,1);%求A的上三角矩阵
-B = inv(D-w.*L)*((1-w).*D+w.*U);
-f = w.*inv((D-w.*L))*b;
+    D = diag(diag(A));%求A的对角矩阵
+    L = -tril(A,-1);%求A的下三角矩阵
+    U = -triu(A,1);%求A的上三角矩阵
+    B = inv(D-w*L)*((1-w)*D+w*U);
+    f = w*inv((D-w*L))*b;
 
-x = B*x0 +f;
-k =1;
-while norm(x-x0)>=tol
-    x0 = x;
     x = B*x0 +f;
-    k = k+1;
-    if(k>=max)
-        disp('Warning:迭代次数太多，可能不收敛')
-        return
+    k =1;
+    while norm(x-x0)>=tol
+        x0 = x;
+        x = B*x0 +f;
+        k = k+1;
+        if(k>=max)
+            disp('Warning:迭代次数太多，可能不收敛')
+            return;
+        end
     end
-end
 
 end
     
