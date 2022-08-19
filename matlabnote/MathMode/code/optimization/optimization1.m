@@ -56,7 +56,7 @@ b2eq = [7];
 % 非线性规划NLP
 %如果目标函数或约束条件中包含非线性函数，就称这种规划问题为非线性规划问题。
 %{
-[x,fval,exitflag,output,lambda,grad,hessian]= fmincon('fun',x0,A,b,Aeq,beq,VLB,VUB,'nonlcon',options）
+[x,fval,exitflag,output,lambda,grad,hessian]= fmincon('fun',x0,A,b,Aeq,beq,VLB,VUB,'nonlcon',options0)
 其中，大部分参数同线性规划；
     VLB和UVB分别是变量x的下界和上界；
     "fun'为用M文件定义的目标函数F(x)；
@@ -66,7 +66,7 @@ A，b，Aeq，beq定义了线性约束A.x<b，Aeq.x =beq，
 %}
 
 
-%线性规划案例1(题目见--优化算法-非线性规划.md)
+%非线性规划案例1(题目见--优化算法-非线性规划.md)
 x0 = rand(2,1);
 VLB = zeros(2,1);
 [x,fval,exitflag,output,lambda,grad,hessian]= fmincon('fun1',x0,[],[],[],[],VLB,[],'fun2')
@@ -75,3 +75,24 @@ VLB = zeros(2,1);
 x0_1= rand(3,1);
 VLB1 = zeros(3,1);
 [x,fval]= fmincon('fun_c1',x0_1,[],[],[],[],VLB1,[],'fun_c2')
+
+%二次规划(线性代数 二次型)(题目见--优化算法-非线性规划.md)
+%{
+[x,fval,exitflag，output] = quadprog(H,f,A,b,Aeq,beq,LB,UB,x0,options)
+\其中，大部分参数同线性规划；
+    LB和VB分别是变量x的下界和上界；
+    A和b对应不等式约束Ax<b；
+    Aeq和beq对应等式约束Ax=b；
+    H %实对称矩阵的2倍
+    f %一次项系数
+    x0为x的初始值；options为控制参数。
+%}
+%二次型换实对称矩阵
+
+Hx2 = 2*[2,-2;-2,4]; %实对称矩阵
+fx2 = [-6,-3];%一次项系数
+Ax2 = [1,1;4,1];%不等式约束条件
+bx2 = [3;9];%不等式约束条件
+
+[x,fval,exitflag] = quadprog(Hx2,fx2,Ax2,bx2,[],[],zeros(2,1))
+
