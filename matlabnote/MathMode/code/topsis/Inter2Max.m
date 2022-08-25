@@ -13,5 +13,3 @@ function [posit_x] = Inter2Max(x,a,b)
         end
     end
 end
-
-
