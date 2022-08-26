@@ -1,8 +1,6 @@
 # Note
 
 
-[<img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=delehub&theme=dark&show_icons=true&count_private=true">](https://metrics.lecoq.io/xqyjlj#gh-dark-mode-only)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xqyjlj&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ## 嵌入式笔记EmbeddedNote
  1. C基础知识
