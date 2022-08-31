@@ -13,11 +13,11 @@ if isa(data,'double')
    elseif (zhibiao_label(i)==5)
             data1(:,i)=fu5(data(:,i));
   elseif (zhibiao_label(i)==6)
-      prompt = 'ÕâÊÇµ¥µã×îÓÅ£¬ÇëÊäÈëµ¥µã×îÓÅÖµ ';
+      prompt = 'è¿™æ˜¯å•ç‚¹æœ€ä¼˜ï¼Œè¯·è¾“å…¥å•ç‚¹æœ€ä¼˜å€¼ ';
        a = input(prompt);
            data1(:,i)=qu6(data(:,i),a);
   elseif (zhibiao_label(i)==7)
-     prompt = 'ÕâÊÇÇø¼ä×îÓÅ£¬ÇëÊäÈëµ¥µã×îÇø¼äÈç[5,10] ';
+     prompt = 'è¿™æ˜¯åŒºé—´æœ€ä¼˜ï¼Œè¯·è¾“å…¥å•ç‚¹æœ€åŒºé—´å¦‚[5,10] ';
       aa=input(prompt);
            data1(:,i)=qu7(data(:,i),aa(1),aa(2));
     end
@@ -43,11 +43,11 @@ elseif isa(data,'cell')
       elseif (zhibiao_label(i)==5)
             data1{j}(:,i)=fu5(data2(:,i));
      elseif (zhibiao_label(i)==6)
-      prompt = 'ÕâÊÇµ¥µã×îÓÅ£¬ÇëÊäÈëµ¥µã×îÓÅÖµ ';
+      prompt = 'è¿™æ˜¯å•ç‚¹æœ€ä¼˜ï¼Œè¯·è¾“å…¥å•ç‚¹æœ€ä¼˜å€¼ ';
        a = input(prompt);
            data1{j}(:,i)=qu6(data2(:,i),a);
     elseif (zhibiao_label(i)==7)
-     prompt = 'ÕâÊÇÇø¼ä×îÓÅ£¬ÇëÊäÈëµ¥µã×îÇø¼äÈç[5,10] ';
+     prompt = 'è¿™æ˜¯åŒºé—´æœ€ä¼˜ï¼Œè¯·è¾“å…¥å•ç‚¹æœ€åŒºé—´å¦‚[5,10] ';
       aa=input(prompt);
            data1{j}(:,i)=qu7(data2(:,i),aa(1),aa(2));
     end
@@ -56,46 +56,46 @@ elseif isa(data,'cell')
 end
 
 function data=zheng1(data1)
-%ÕıÏòÖ¸±ê1
-% Ìî1µÄÊ±ºòÑ¡Ôñ
+%æ­£å‘æŒ‡æ ‡1
+% å¡«1çš„æ—¶å€™é€‰æ‹©
 data=(data1-min(data1))./(max(data1)-min(data1));
 end
 function data=zheng2(data1)
-%ÕıÏòÖ¸±ê2
-% Ìî2µÄÊ±ºòÑ¡Ôñ
+%æ­£å‘æŒ‡æ ‡2
+% å¡«2çš„æ—¶å€™é€‰æ‹©
 data=data1;
 end
 function data=fu3(data1)
-%¸ºÏòÖ¸±ê1
-% Ìî3µÄÊ±ºòÑ¡Ôñ
+%è´Ÿå‘æŒ‡æ ‡1
+% å¡«3çš„æ—¶å€™é€‰æ‹©
 data=(max(data1)-data1)./(max(data1)-min(data1));
 end
 function data=fu4(data1)
-%¸ºÏòÖ¸±ê2
-% Ìî4µÄÊ±ºòÑ¡Ôñ
+%è´Ÿå‘æŒ‡æ ‡2
+% å¡«4çš„æ—¶å€™é€‰æ‹©
 data=(max(data1)-data1);
 end
 function data=fu5(data1)
-%¸ºÏòÖ¸±ê3
-% Ìî5µÄÊ±ºòÑ¡Ôñ
+%è´Ÿå‘æŒ‡æ ‡3
+% å¡«5çš„æ—¶å€™é€‰æ‹©
 data=1./(max(abs(data1))+data1);
 end
 function data=qu6(data1,a)
-%Ä³µã×îÓÅ
-% Ìî6µÄÊ±ºòÑ¡Ôñ
+%æŸç‚¹æœ€ä¼˜
+% å¡«6çš„æ—¶å€™é€‰æ‹©
 data=1./(abs(data1-a)/max(abs(data1-a)));
 end
 function data=qu7(data1,a,b)
-%Çø¼äÖ¸±ê1
-% Ìî7µÄÊ±ºòÑ¡Ôñ
-    data=ones(length(data1),1);
-for n=1:length(data1)
-    if(data1(n,1)>a)&(data1(n,1)<b)
-        data(n,1)=1;
-    elseif (data1(n,1)<a)
-        data(n,1)=data1(n,1)/a;
-    elseif (data1(n,1)>b)
-        data(n,1)=b/data1(n,1);
+%åŒºé—´æŒ‡æ ‡1
+% å¡«7çš„æ—¶å€™é€‰æ‹©
+    data=data1;
+for i=1:length(data1)
+    if(data1(i,1)>a)&(data1(i,1)<b)
+        data(i,1)=1;
+    elseif (data1(i,1)<a)
+        data(i,1)=data1(i,1)/a;
+    elseif (data1(i,1)>b)
+        data(i)=b/data1(i);
     end
 end
 end

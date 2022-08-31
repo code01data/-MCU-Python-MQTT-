@@ -18,7 +18,7 @@ if isa(data,'double')
            data1(:,i)=qu6(data(:,i),a);
   elseif (zhibiao_label(i)==7)
      prompt = '这是区间最优，请输入单点最区间如[5,10] ';
-      aa=prompt;
+      aa=input(prompt);
            data1(:,i)=qu7(data(:,i),aa(1),aa(2));
     end
     end
@@ -48,7 +48,7 @@ elseif isa(data,'cell')
            data1{j}(:,i)=qu6(data2(:,i),a);
     elseif (zhibiao_label(i)==7)
      prompt = '这是区间最优，请输入单点最区间如[5,10] ';
-      aa=prompt;
+      aa=input(prompt);
            data1{j}(:,i)=qu7(data2(:,i),aa(1),aa(2));
     end
         end
@@ -88,13 +88,14 @@ end
 function data=qu7(data1,a,b)
 %区间指标1
 % 填7的时候选择
-for i=1:length(data1)
-    if(data1>a)&&(data1<b)
-        data(i)=1;
-    elseif (data1<a)
-        data(i)=data1/a;
-    elseif (data1>b)
-        data(i)=b/data1;
+    data=ones(length(data1),1);
+for n=1:length(data1)
+    if(data1(n,1)>a)&(data1(n,1)<b)
+        data(n,1)=1;
+    elseif (data1(n,1)<a)
+        data(n,1)=data1(n,1)/a;
+    elseif (data1(n,1)>b)
+        data(n,1)=b/data1(n,1);
     end
 end
 end
