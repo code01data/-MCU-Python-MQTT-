@@ -12,8 +12,6 @@
  6. linux 多线程 多进程通讯 linux系统任务调度和中断
  7. bash命令 shell makefile python github go javascript
  8. linux 启动过程
-##  LetCode
-1. 网络资料-LetCode刷题 C语言实现
 ## ESP32 
 - [x] 1. ESP32 ESP-IDF环境搭建
 ## ESP8266
