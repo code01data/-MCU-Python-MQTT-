@@ -41,35 +41,6 @@ cumprod_D = cumprod(mean_A,2)
 
 ### matlab 绘图
 matlab绘图技巧笔记(https://zhuanlan.zhihu.com/p/345799328) 
-（一）：常用函数
-（二）：散点图scatter和scatter3函数
-（三）：误差条图errorbar函数
-（四）：填充图area函数
-（五）：堆叠图stackedplot函数
-（六）：直方图histogram和histogram2函数
-（七）：箱线图boxchart函数
-（八）：分bin散点图binscatter函数
-（九）：scatterhistogram、spy和plotmatrix函数
-（十）：饼图pie和pie3函数
-（十一）：热图heatmap函数
-（十二）：文字云wordcloud函数
-（十三）：条形图bar、barh、bar3和bar3h函数
-（十四）：帕累托图pareto函数
-（十五）：针状图stem和stem3函数
-（十六）：阶梯图stairs函数
-（十七）：极坐标线条polarplot函数
-（十八）：极坐标散点图polarscatter函数
-（十九）：极坐标直方图polarhistogram函数
-（二十）：等高线图contour和contourf函数
-（二十一）：三维等高线图contour3等函数
-（二十二）：三维等高线图contourslice切片函数
-（二十三）：箭头向量图quiver和quiver3函数
-（二十四）：箭头图feather和compass函数
-（二十五）：流线图streamline和streamslice函数
-（二十六）：曲面图surf函数
-（二十七）：曲面图下的等高线图surfc函数
-（二十八）：三维图形的灯光、照明和材质处理
-（二十九）：网格曲面图mesh函数
 #### 
 ```matlab
 %legend在坐标区上添加图例
