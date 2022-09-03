@@ -2,16 +2,6 @@
 
 ## 毕业设计
 - [x] Internet of Things environmental monitoring system based on STM32
-## 嵌入式笔记EmbeddedNote
- 1. C基础知识
- 1. 数据结构（链表 hash表 排序算法 设计模式等）
- 2. 外设（串口 网口 i2s i2c spi sdio等）
- 3. ARM cortex-m0 m3 m4 A8等芯片架构
- 4. 操作系统（内存管理 进程管理 实时性要求 任务间通讯等）
- 5. tcpip协议栈（tcpip模型 分层结构 ip tcp udp icmp igmp tftp http ftp等协议）
- 6. linux 多线程 多进程通讯 linux系统任务调度和中断
- 7. bash命令 shell makefile python github go javascript
- 8. linux 启动过程
 ## ESP32 
 - [x] 1. ESP32 ESP-IDF环境搭建
 ## ESP8266
@@ -120,7 +110,15 @@
 - [x] 19. STM32F1案例串口USART库使用.md
 - [x] 20. STM32F1案例基本定时器（TIM6_7）与通用定时器（TIM2_3_4_5）使用.md
 - [x] 21. STM32F1案例ST7735 TFT液晶显示屏综合库使用.md
-- [ ] 22. 粤嵌STM32开发笔记
 
-
+## 嵌入式笔记EmbeddedNote
+ 1. C基础知识
+ 1. 数据结构（链表 hash表 排序算法 设计模式等）
+ 2. 外设（串口 网口 i2s i2c spi sdio等）
+ 3. ARM cortex-m0 m3 m4 A8等芯片架构
+ 4. 操作系统（内存管理 进程管理 实时性要求 任务间通讯等）
+ 5. tcpip协议栈（tcpip模型 分层结构 ip tcp udp icmp igmp tftp http ftp等协议）
+ 6. linux 多线程 多进程通讯 linux系统任务调度和中断
+ 7. bash命令 shell makefile python github go javascript
+ 8. linux 启动过程
 
