@@ -248,3 +248,5 @@ legend('sin','cos','location','northwest')%可以将标识框放置在图的左�
                   'Cucumbers','Eggplant')
 
 ```
+
+
