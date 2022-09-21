@@ -7,8 +7,8 @@
 **测试集（Testing set）** —— 用来评估模最终模型的泛化能力。但不能作为调参、选择特征等算法相关的选择的依据。
 
 ## BP神经网络模型理论
-https://mp.weixin.qq.com/s/EbHgAZ-eU1qTvRnBZ1TSWA
-https://zhuanlan.zhihu.com/p/396508951
+1. https://mp.weixin.qq.com/s/EbHgAZ-eU1qTvRnBZ1TSWA
+2. https://zhuanlan.zhihu.com/p/396508951
 ## 案例
 ![案例.png](https://img1.imgtp.com/2022/09/21/1cApTci1.png)
 
