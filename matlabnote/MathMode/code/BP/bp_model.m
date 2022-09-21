@@ -1,18 +1,3 @@
-# 预测模型-BP神经网络模型
-## 基本概念
-**训练集（Training set）** —— 用于模型拟合的数据样本。
-
-**验证集（Validation set）**—— 是模型训练过程中单独留出的样本集，它可以用于调整模型的超参数和用于对模型的能力进行初步评估。在神经网络中，我们用验证数据集去寻找最优的网络深度，或者决定反向传播算法的停止点或者在神经网络中选择隐藏层神经元的数量；
-
-**测试集（Testing set）** —— 用来评估模最终模型的泛化能力。但不能作为调参、选择特征等算法相关的选择的依据。
-
-## BP神经网络模型理论
-https://mp.weixin.qq.com/s/EbHgAZ-eU1qTvRnBZ1TSWA
-https://zhuanlan.zhihu.com/p/396508951
-## 案例
-![案例.png](https://img1.imgtp.com/2022/09/21/1cApTci1.png)
-
-```matlab
 %% BP神经网络案例 https://mp.weixin.qq.com/s/EbHgAZ-eU1qTvRnBZ1TSWA
 %% 数据的加载
 clc;clear;close all;
@@ -103,4 +88,46 @@ plot(BP_predict,'*','Color',color(1,:))
 hold on
 titlestr=['BP神经网络','   误差为：',num2str(errors_nn)];
 title(titlestr)
-```
+%%
+
+%% 
+% %设置训练次数
+% net.trainParam.epochs = 50000;
+% %设置收敛误差
+% net.trainParam.goal=0.000001;
+% newff(P,T,S,TF,BTF,BLF,PF,IPF,OPF,DDF) takes optional inputs,
+%      TF- Transfer function of ith layer. Default is 'tansig' for
+%              hidden layers, and 'purelin' for output layer.
+%%激活函数的设置
+%     compet - Competitive transfer function.
+%     elliotsig - Elliot sigmoid transfer function.
+%     hardlim - Positive hard limit transfer function.
+%     hardlims - Symmetric hard limit transfer function.
+%     logsig - Logarithmic sigmoid transfer function.
+%     netinv - Inverse transfer function.
+%     poslin - Positive linear transfer function.
+%     purelin - Linear transfer function.
+%     radbas - Radial basis transfer function.
+%     radbasn - Radial basis normalized transfer function.
+%     satlin - Positive saturating linear transfer function.
+%     satlins - Symmetric saturating linear transfer function.
+%     softmax - Soft max transfer function.
+%     tansig - Symmetric sigmoid transfer function.
+%     tribas - Triangular basis transfer function.
+%%
+%        BTF - Backprop network training function, default = 'purelin'.
+%        BLF - Backprop weight/bias learning function, default = 'learngdm'.
+%        PF  - Performance function, default = 'mse'.
+%        IPF - Row cell array of input processing functions.
+%              Default is {'fixunknowns','remconstantrows','mapminmax'}.
+%        OPF - Row cell array of output processing functions.
+%              Default is {'remconstantrows','mapminmax'}.
+%        DDF - Data division function, default = 'dividerand';
+%      and returns an N layer feed-forward backprop network.
+%  
+%      The transfer functions TF{i} can be any differentiable transfer
+%      function such as TANSIG, LOGSIG, or PURELIN.
+%  
+%      The training function BTF can be any of the backprop training
+%      functions such as TRAINLM, TRAINBFG, TRAINRP, TRAINGD, etc.
+%%
