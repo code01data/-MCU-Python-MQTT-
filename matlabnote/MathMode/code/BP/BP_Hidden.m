@@ -26,7 +26,7 @@ output_test=output(n(1901:2000));
 % %初始化网络结构
 net=newff(inputn,outputn,[5 5]);
 
-net.trainParam.epochs=100;
+net.trainParam.epochs=100; 
 net.trainParam.lr=0.1;
 net.trainParam.goal=0.00004;
 
